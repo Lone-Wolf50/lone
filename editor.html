@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor Project</title>
+    <link rel="stylesheet" href="edit.css">
+    <script src="https://kit.fontawesome.com/50a9c860ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+
+<div class="container">
+    <div class="left">
+        <div class="box">
+            <label for="" ><i class="fa-brands fa-html5 " style="color:rgba(255, 94, 0, 0.774);"></i>HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+        </div>
+
+        <div class="box">
+            <label for="" ><i class="fa-brands fa-css3-alt"" style="color:rgb(0, 183, 255);"></i>CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+        </div>
+
+        <div class="box">
+            <label for="" ><i class="fa-brands fa-js"" style="color:yellow;"></i>JavaScript</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+    </div>
+
+    <div class="right">
+        <label for=""><i class="fa-solid fa-play"></i>Output</label>
+        <iframe id="output"></iframe>
+    </div>
+
+</div>
+    
+    <script src="ide.js"></script>
+</body>
+</html>
